@@ -1,12 +1,12 @@
 // app.js
- import moment from 'moment';
- import { camelCase } from 'lodash';
+import { camelCase } from 'lodash';
+
 App({
   onLaunch() {
-    console.log('-----------------------------------------------x');
-        let sFromNowText = moment(new Date().getTime() - 360000).fromNow();
-        console.log(sFromNowText);
-        console.log(camelCase('OnLaunch'));
+    console.log('hhhhh-------')
+    console.log(camelCase('OnLaunch'));
+    console.log(`环境：${process.env.NODE_ENV} 构建类型：${process.env.BUILD_TYPE}`)
+
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

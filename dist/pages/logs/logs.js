@@ -1,60 +1,10 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+;require('./../../runtime');require('./../../common');(wx["webpackChunk"] = wx["webpackChunk"] || []).push([[3],{
 
 /***/ 2:
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-var formatTime = function formatTime(date) {
-  var year = date.getFullYear();
-  var month = date.getMonth() + 1;
-  var day = date.getDate();
-  var hour = date.getHours();
-  var minute = date.getMinutes();
-  var second = date.getSeconds();
-  return "".concat([year, month, day].map(formatNumber).join('/'), " ").concat([hour, minute, second].map(formatNumber).join(':'));
-};
-var formatNumber = function formatNumber(n) {
-  n = n.toString();
-  return n[1] ? n : "0".concat(n);
-};
-module.exports = {
-  formatTime: formatTime
-};
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 // logs.js
-var util = __webpack_require__(2);
+var util = __webpack_require__(1);
 Page({
   data: {
     logs: []
@@ -70,7 +20,14 @@ Page({
     });
   }
 });
-})();
 
-/******/ })()
-;
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ __webpack_require__.O(0, [1], () => (__webpack_exec__(2)));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFnZXMvbG9ncy9sb2dzLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQUE7QUFDQSxJQUFNQSxJQUFJLEdBQUdDLG1CQUFPLENBQUMsQ0FBcUIsQ0FBQztBQUUzQ0MsSUFBSSxDQUFDO0VBQ0hDLElBQUksRUFBRTtJQUNKQyxJQUFJLEVBQUU7RUFDUixDQUFDO0VBQ0RDLE1BQU0sV0FBQUEsT0FBQSxFQUFHO0lBQ1AsSUFBSSxDQUFDQyxPQUFPLENBQUM7TUFDWEYsSUFBSSxFQUFFLENBQUNHLEVBQUUsQ0FBQ0MsY0FBYyxDQUFDLE1BQU0sQ0FBQyxJQUFJLEVBQUUsRUFBRUMsR0FBRyxDQUFDLFVBQUFDLEdBQUcsRUFBSTtRQUNqRCxPQUFPO1VBQ0xDLElBQUksRUFBRVgsSUFBSSxDQUFDWSxVQUFVLENBQUMsSUFBSUMsSUFBSSxDQUFDSCxHQUFHLENBQUMsQ0FBQztVQUNwQ0ksU0FBUyxFQUFFSjtRQUNiLENBQUM7TUFDSCxDQUFDO0lBQ0gsQ0FBQyxDQUFDO0VBQ0o7QUFDRixDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9sb2dzL2xvZ3MuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gbG9ncy5qc1xuY29uc3QgdXRpbCA9IHJlcXVpcmUoJy4uLy4uL3V0aWxzL3V0aWwuanMnKVxuXG5QYWdlKHtcbiAgZGF0YToge1xuICAgIGxvZ3M6IFtdXG4gIH0sXG4gIG9uTG9hZCgpIHtcbiAgICB0aGlzLnNldERhdGEoe1xuICAgICAgbG9nczogKHd4LmdldFN0b3JhZ2VTeW5jKCdsb2dzJykgfHwgW10pLm1hcChsb2cgPT4ge1xuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIGRhdGU6IHV0aWwuZm9ybWF0VGltZShuZXcgRGF0ZShsb2cpKSxcbiAgICAgICAgICB0aW1lU3RhbXA6IGxvZ1xuICAgICAgICB9XG4gICAgICB9KVxuICAgIH0pXG4gIH1cbn0pXG4iXSwibmFtZXMiOlsidXRpbCIsInJlcXVpcmUiLCJQYWdlIiwiZGF0YSIsImxvZ3MiLCJvbkxvYWQiLCJzZXREYXRhIiwid3giLCJnZXRTdG9yYWdlU3luYyIsIm1hcCIsImxvZyIsImRhdGUiLCJmb3JtYXRUaW1lIiwiRGF0ZSIsInRpbWVTdGFtcCJdLCJzb3VyY2VSb290IjoiIn0=
